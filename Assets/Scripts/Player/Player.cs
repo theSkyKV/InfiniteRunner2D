@@ -5,8 +5,8 @@ public class Player : MonoBehaviour
 {
     [SerializeField] private int _health;
 
-    public UnityAction<int> HealthChanged;
-    public UnityAction Died;
+    public event UnityAction<int> HealthChanged;
+    public event UnityAction Died;
 
     private void Start()
     {
